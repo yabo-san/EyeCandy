@@ -1,6 +1,7 @@
 # EyeCandy
 
 ## Team Texas
+Alireza Alampour, Dominic Ciliberto, Kevin Zelaya, Matthew Fuller, Pablo Lepe
 
 #### Release v0.1
 
