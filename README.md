@@ -15,3 +15,4 @@ Alireza Alampour, Dominic Ciliberto, Kevin Zelaya, Matthew Fuller, Pablo Lepe
     - Creating Effort Estimation
     - Establishing user loop. 
     - Figuring out sprints
+    - Possible scanners to use
