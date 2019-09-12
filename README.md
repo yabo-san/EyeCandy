@@ -1,6 +1,7 @@
 # EyeCandy
 
 ## Team Texas
+Alireza Alampour, Dominic Ciliberto, Kevin Zelaya, Matthew Fuller, Pablo Lepe
 
 #### Release v0.1
 
@@ -13,3 +14,5 @@
     - Looking for prospective libraries and solution for putting our application together.
     - Creating Effort Estimation
     - Establishing user loop. 
+    - Figuring out sprints
+    - Possible scanners to use
