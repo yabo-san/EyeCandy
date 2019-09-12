@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function displayLogin()
+		{
+			document.getElementById("landingPage").style.display = "none";
+			document.getElementById("login").style.display = "block";
+		}
+
+		function displayRegister()
+		{
+			document.getElementById("landingPage").style.display = "none";
+			document.getElementById("register").style.display = "block";
+		}
+
+		function loginHandler()
+		{
+			document.getElementById("login").style.display = "none";
+			document.getElementById("accountInfo").style.display = "block";
+		}
+
+		function regHandler()
+		{
+			document.getElementById("register").style.display = "none";
+			document.getElementById("accountInfo").style.display = "block";
+		}
+
+		function displaySub()
+		{
+			document.getElementById("plan").style.display = "block";
+			document.getElementById("menu").style.display = "none";
+			document.getElementById("uploadFile").style.display = "none";			
+		}
+
+		function displayMenu()
+		{
+			document.getElementById("plan").style.display = "none";
+			document.getElementById("menu").style.display = "block";
+			document.getElementById("uploadFile").style.display = "none";			
+		}
+
+		function displayUploadFile()
+		{
+			document.getElementById("plan").style.display = "none";
+			document.getElementById("menu").style.display = "none";
+			document.getElementById("uploadFile").style.display = "block";			
+		}
+
+		function initHandler()
+		{
+			document.getElementById("loginStart").addEventListener("click", displayLogin);
+			document.getElementById("RegisterStart").addEventListener("click", displayRegister);
+			document.getElementById("loginFinish").addEventListener("click", loginHandler);
+			document.getElementById("RegisterFinish").addEventListener("click", regHandler);
+			document.getElementById("viewSub").addEventListener("click", displaySub);
+			document.getElementById("viewMenu").addEventListener("click", displayMenu);
+			document.getElementById("viewUploadFile").addEventListener("click", displayUploadFile);
+		}
+		window.addEventListener("load", initHandler);
+	</script>
+</head>
+<body>
+	<div id="landingPage" style="display: block;">
+		<input type="button" id="loginStart" value="Login" ></input>
+		<input type="button" id="RegisterStart" value="Register" ></input>
+	</div>
+	<div id="login" style="display: none;">
+		<p><label>User Name<br><input type="text" id="UsernameLogin"></label></p>
+		<p><label>Password<br><input type="text" id="PasswordLogin"></label></p>
+		<input type="button" id="loginFinish" value="Login" ></input>
+	</div>
+	<div id="register" style="display: none;"><p><label>User Name<br><input type="text" id="UsernameRegister"></label></p>
+	<p><label>Password<br><input type="text" id="PasswordRegister1"></label></p>
+	<p><label>Re-Enter Password<br><input type="text" id="PasswordRegister2"></label></p>
+	<input type="button" id="RegisterFinish" value="Register" ></input></div>
+	
+	<div id="accountInfo" style="display: none;">
+		<input type="button" id="viewSub" value="View Subscription" ></input>
+		<input type="button" id="viewMenu" value="View Menu" ></input>
+		<input type="button" id="viewUploadFile" value="Upload File" ></input>
+		<div id="plan" style="display: none;"></div>
+		<div id="menu" style="display: block;"></div>
+		<div id="uploadFile" style="display: none;"></div>
+	</div>
+</body>
+</html>
